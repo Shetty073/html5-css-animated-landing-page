@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: url(img/background.jpg) no-repeat center center/cover;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#logo {
+    width: 165px;
+    height: 55px;
+}
+
+.animated {
+    font-family: 'Charm', cursive;
+    margin: 0;
+    padding: 0;
+    font-size: 6rem;
+    background: url(img/text-bg-1.svg) no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBg 20s linear infinite;
+    -webkit-animation: moveBg 20s linear infinite;
+}
+
+/* Text background animation */
+@keyframes moveBg {
+    0% {
+        background-position: 0% 30%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* @-webkit-keyframes mobeBg {
+    0% {
+        background-position: 0% 30%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    } 
+} */
